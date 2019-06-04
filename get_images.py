@@ -63,7 +63,7 @@ did_write = 0
 if not os.path.exists(img_dir):
 	os.mkdir(img_dir)
 
-for progress in range(start_idx,n_images)::
+for progress in range(start_idx,n_images):
 
 	if (progress%20==0):
 		print(progress)
