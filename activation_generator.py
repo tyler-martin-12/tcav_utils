@@ -189,7 +189,9 @@ class ImageActivationGenerator(ActivationGeneratorBase):
     if len(imgs) <= 1:
       raise ValueError('You must have more than 1 image in each class to run TCAV.')
     # save filenames
+
     save_path = 'files/f_used_10.pkl'
+    save_path = ''
     if save_path is not None:
       with tf.gfile.Open(save_path, 'w') as pkl_file:
         pickle.dump(f_used, pkl_file)
