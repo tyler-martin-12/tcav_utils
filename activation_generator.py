@@ -174,7 +174,6 @@ class ImageActivationGenerator(ActivationGeneratorBase):
       if len(imgs) <= 1:
         raise ValueError('You must have more than 1 image in each class to run TCAV.')
     else:
-    '''
     f_used = []
     #tf.logging.info('length is ' + str(len(filenames)))
     for filename in filenames:
@@ -197,5 +196,6 @@ class ImageActivationGenerator(ActivationGeneratorBase):
         pickle.dump(f_used, pkl_file)
     else:
       tf.logging.info('save_path is None. Not saving anything')
+    '''
 
     return np.array(imgs)
