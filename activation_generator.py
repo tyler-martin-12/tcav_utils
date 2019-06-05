@@ -191,7 +191,7 @@ class ImageActivationGenerator(ActivationGeneratorBase):
     # save filenames
 
     save_path = 'files/f_used_10.pkl'
-    save_path = ''
+    save_path = None
     if save_path is not None:
       with tf.gfile.Open(save_path, 'w') as pkl_file:
         pickle.dump(f_used, pkl_file)
