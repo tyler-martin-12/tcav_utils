@@ -104,4 +104,4 @@ venv.bak/
 .mypy_cache/
 
 # files extensions to ignore
-.h5
+*.h5
